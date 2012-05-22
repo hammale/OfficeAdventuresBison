@@ -15,7 +15,7 @@ public class OfficeAdventures extends BaseState {
     static int HEIGHT = 480;
     
 	public static void main(String[] argv) {
-		game = new Game();
+		game = new Game(480, 640, "Office Adventures");
 		new OfficeAdventures(game, 1, "Test");
 	}
 
