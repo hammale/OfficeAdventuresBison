@@ -5,18 +5,18 @@ import com.echoeight.bison.Game;
 
 public class OfficeAdventures extends BaseState {
 
-	Game game;
+	static Game game;
 	
-    public OfficeAdventures(int id, String name) {
-		super(id, name);
-		game = new Game();
+    public OfficeAdventures(Game game, int id, String name) {
+		super(game, id, name);
 	}
 
 	static int WIDTH = 640;
     static int HEIGHT = 480;
     
 	public static void main(String[] argv) {
-		new OfficeAdventures(1, "Test");
+		game = new Game();
+		new OfficeAdventures(game, 1, "Test");
 	}
 
 	@Override
